@@ -1,0 +1,35 @@
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Display Settings */
+.hidden {
+    display: none;
+}
+
+.play-game {
+    width: 100%;
+    font-size: 1.6rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+    .navbar-expand-lg .navbar-nav {
+        justify-content: flex-end;
+    }
+}
+
