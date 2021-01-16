@@ -18,7 +18,11 @@ body {
 /* General Styles */
 .main-container {
     background-color: #E4E4E4;
-    height: 100vh;
+    border-radius: 0px 0px 10px 10px;
+    border: 1px solid #d0d0d0;
+    position: relative;
+    box-shadow: 10px 10px 0 10px hsl(0, 0%, 90%);
+    /* height: 100vh; */
 }
 
 ul {
@@ -65,6 +69,20 @@ ul {
 
     .play-game {
         width: 50%;
+    }
+
+    .main-container:after {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        bottom: 5px;
+        left: 10px;
+        top: -8px;
+        right: -8px;
+        background-color: #E4E4E4;
+        border: 2px solid #d0d0d0;
+        border-radius: 0px 0px 10px 10px;
+        box-shadow: 13px -18px 0 -10px hsl(0, 0%, 88%)
     }
 }
 
