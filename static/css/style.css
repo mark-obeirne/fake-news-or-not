@@ -73,8 +73,26 @@ ul {
     display: block;
 }
 
+/* Game Page Game Panel */
+.headline-container {
+    background-image: url("../images/newspaper-1920.jpg");
+    background-color: #f34545;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headline {
+    background-color: #fff;
+    color: #000;
+}
+
+.headline-text {
+    margin-top: 1rem;
+}
+
 .answer-btn-column {
-    min-height: 20rem;
+    min-height: 15rem;
 }
 
 .answer-text {
