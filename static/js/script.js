@@ -1,6 +1,6 @@
 /* Global Variables */
-let score = 0;
-let question = 1;
+let score;
+let question;
 let playerName;
 
 /* Element Selectors */
@@ -21,12 +21,28 @@ function hideGameIntroModal() {
     gameIntroModal.classList.add("hidden");
 }
 
+function selectStories(collection) {
+    let selected = []
+    for (let i = 0; i < 10; i++) {
+        random = Math.floor(Math.random() * 5)
+        selected.push(collection[random])
+    }
+}
+
 function startGame() {
     hideGameIntroModal()
+    
+    fetch("../../headlines.json")
+        .then(response => response.json())
+        .then(data => selectStories(data));
+
+
 }
 
 function initialiseGame() {
     showGameIntroModal();
+    score = 0;
+    question = 1;
 }
 
 
