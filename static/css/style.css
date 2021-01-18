@@ -75,13 +75,12 @@ ul {
     left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.6);
-    display: flex;
-    align-items: center;
 }
 
 .modal-content {
     background-color: #fff;
     border-radius: 10px;
+    top: 10rem;
 }
 
 /* Game Page Admin Panel */
