@@ -1,10 +1,12 @@
 /* Global Variables */
 let score;
-let question;
+let round;
 let playerName;
+let selectedStories = []
 
 /* Element Selectors */
 const gameWindow = document.querySelector(".game-panel");
+const answerBtns = document.querySelectorAll(".answer-btn")
 
 
 /* Functions */
@@ -21,67 +23,90 @@ function hideGameIntroModal() {
     gameIntroModal.classList.add("hidden");
 }
 
+function updateScore() {
+    const scoreDisplay = document.querySelector(".user-score")
+    score += 1;
+    scoreDisplay.textContent = score.toString();
+}
 
+function updateRound() {
+    const gameRound = document.querySelector(".game-round")
+    round += 1;
+    gameRound.textContent = round.toString();
+}
 
-function showHeadline(listOfStories) {
+function newRound() {
+    if (round < 10) {
+        selectedStories.shift();
+        updateRound();
+        hideFeedbackModal();
+        startRound();
+    } else {
+        console.log("Game ends")
+    }
+}
+
+function showFeedbackModal(answersMatch, headline) {
     const feedbackModal = document.querySelector(".feedback-modal");
-    console.log(listOfStories);
-    const headline = document.querySelector(".headline-text")
-    const answerBtns = document.querySelectorAll(".answer-btn")
-    roundQuestion = listOfStories[0]
-    headline.textContent = roundQuestion["headline"]
+    feedbackModal.classList.remove("hidden");
+    const feedbackModalHeading = document.querySelector(".feedback-modal h2");
+    const feedbackModalContent = document.querySelector(".article-summary p");
+    const feedbackModalLink = document.querySelector(".article-link");
+    const nextButton = document.querySelector(".next-headline");
+    feedbackModalContent.textContent = headline["articleExcerpt"];
+    feedbackModalLink.setAttribute("href", headline["articleLink"]);
+
+    if (answersMatch) {
+        // Update Text of Modal
+        
+        feedbackModalHeading.innerHTML = '<i class="far fa-check-circle"></i> Correct!';
+        feedbackModalHeading.classList.add("correct");
+        
+        nextButton.addEventListener("click", newRound)
+    } else {
+
+        feedbackModalHeading.innerHTML = '<i class="far fa-check-circle"></i> Incorrect!';
+        feedbackModalHeading.classList.add("incorrect");
+
+    }
+}
+
+
+function hideFeedbackModal() {
+    const feedbackModalHeading = document.querySelector(".feedback-modal h2");
+    const feedbackModal = document.querySelector(".feedback-modal");
+    feedbackModalHeading.classList.remove("correct");
+    feedbackModalHeading.classList.remove("incorrect");
+    feedbackModal.classList.add("hidden");
+}
+
+function checkAnswer() {
+    const userAnswer = this.firstElementChild.textContent;
+    const correctAnswer = startRound()
     
-    // Possibly under a different function - new round
-    listOfStories.shift();
+    if (userAnswer.trim().toLowerCase() === correctAnswer["category"].trim().toLowerCase()) {
+        updateScore();
+        showFeedbackModal(true, correctAnswer)
+    } else {
+        showFeedbackModal(false, correctAnswer)
+    }
+}
 
-        // Check user answer against headline's answer
-    answerBtns.forEach(answer => answer.addEventListener("click", function() {
-        if (answer.textContent.trim().toLowerCase() === roundQuestion["category"].trim().toLowerCase()) {
-            console.log("Success!");
-            score += 1;
-            console.log("Score: " + score);
-            // Show Modal
-            const feedbackModal = document.querySelector(".feedback-modal");
-            feedbackModal.classList.remove("hidden");
-            // Update Text of Modal
-            const feedbackModalHeading = document.querySelector(".feedback-modal h2");
-            const feedbackModalContent = document.querySelector(".article-summary p");
-            const feedbackModalLink = document.querySelector(".article-link");
-            const nextButton = document.querySelector(".next-headline")
-            feedbackModalHeading.innerHTML = '<i class="far fa-check-circle"></i> Correct!';
-            feedbackModalHeading.classList.add("correct");
-            feedbackModalContent.textContent = roundQuestion["articleExcerpt"];
-            feedbackModalLink.setAttribute("href", roundQuestion["articleLink"]);
+function startRound() {
+    const roundQuestion = selectedStories[0]
+    const headline = document.querySelector(".headline-text")
+    headline.textContent = roundQuestion["headline"]
+    return roundQuestion;
+}
+    
 
-            // Need to check question number
-            // Start new round - update question/round number, update score, hide feedback modal
-            // Generate new headline - i.e. run showHeadline function again
-            // Keeping it within this function is causing issues where function fires multiple times
-            /*  
-            nextButton.addEventListener("click", function() {
-                feedbackModal.classList.add("hidden");
-                showHeadline(listOfStories);
-
-            }) */
-            
-            /* if (question < 10) {
-                nextButton.addEventListener("click", showHeadline(listOfStories));
-            } */
-        } else {
-            console.log("Ooops!")
-            // Show Modal
-        }
-    }))
-
-} 
 
 function selectStories(collection) {
-    let selected = [];
     for (let i = 0; i < 10; i++) {
         random = Math.floor(Math.random() * 3);
-        selected.push(collection[random]);
+        selectedStories.push(collection[random]);
     }
-    showHeadline(selected);
+    startRound();
 }
 
 function startGame() {
@@ -97,11 +122,12 @@ function startGame() {
 function initialiseGame() {
     showGameIntroModal();
     score = 0;
-    question = 1;
+    round = 1;
 }
 
 
 /* Event Listeners */
 if (gameWindow) {
     window.addEventListener("load", initialiseGame);
+    answerBtns.forEach(answer => answer.addEventListener("click", checkAnswer));
 }
