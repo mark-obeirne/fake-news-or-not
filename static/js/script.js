@@ -21,6 +21,8 @@ function hideGameIntroModal() {
     gameIntroModal.classList.add("hidden");
 }
 
+
+
 function showHeadline(listOfStories) {
     const feedbackModal = document.querySelector(".feedback-modal");
     console.log(listOfStories);
@@ -28,9 +30,12 @@ function showHeadline(listOfStories) {
     const answerBtns = document.querySelectorAll(".answer-btn")
     roundQuestion = listOfStories[0]
     headline.textContent = roundQuestion["headline"]
+    
+    // Possibly under a different function - new round
     listOfStories.shift();
-    answerBtns.forEach(answer => answer.addEventListener("click", function() {
+
         // Check user answer against headline's answer
+    answerBtns.forEach(answer => answer.addEventListener("click", function() {
         if (answer.textContent.trim().toLowerCase() === roundQuestion["category"].trim().toLowerCase()) {
             console.log("Success!");
             score += 1;
