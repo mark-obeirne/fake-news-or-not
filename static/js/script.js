@@ -10,6 +10,7 @@ const answerBtns = document.querySelectorAll(".answer-btn")
 
 
 /* Functions */
+// Show Intro Modal When Game Page Loads
 function showGameIntroModal() {
     const gameIntroModal = document.querySelector(".game-intro-modal");
     gameIntroModal.classList.remove("hidden");
@@ -18,23 +19,27 @@ function showGameIntroModal() {
     
 }
 
+// Hide Intro Modal
 function hideGameIntroModal() {
     const gameIntroModal = document.querySelector(".game-intro-modal");
     gameIntroModal.classList.add("hidden");
 }
 
+// Update Score & Displayed User Score
 function updateScore() {
     const scoreDisplay = document.querySelector(".user-score")
     score += 1;
     scoreDisplay.textContent = score.toString();
 }
 
+// Update Round Number & Displayed Round Number
 function updateRound() {
     const gameRound = document.querySelector(".game-round")
     round += 1;
     gameRound.textContent = round.toString();
 }
 
+// Check Round Number & Handle Functions Or End Game
 function newRound() {
     if (round < 10) {
         selectedStories.shift();
@@ -46,6 +51,7 @@ function newRound() {
     }
 }
 
+// Display Modal After Player Answers & Update Content
 function showFeedbackModal(answersMatch, headline) {
     const feedbackModal = document.querySelector(".feedback-modal");
     feedbackModal.classList.remove("hidden");
@@ -71,7 +77,7 @@ function showFeedbackModal(answersMatch, headline) {
     }
 }
 
-
+// Hide Modal
 function hideFeedbackModal() {
     const feedbackModalHeading = document.querySelector(".feedback-modal h2");
     const feedbackModal = document.querySelector(".feedback-modal");
@@ -80,6 +86,7 @@ function hideFeedbackModal() {
     feedbackModal.classList.add("hidden");
 }
 
+// Check User Answer Against Headline Category
 function checkAnswer() {
     const userAnswer = this.firstElementChild.textContent;
     const correctAnswer = startRound()
@@ -92,6 +99,7 @@ function checkAnswer() {
     }
 }
 
+// Start New Round And Choose Headline
 function startRound() {
     const roundQuestion = selectedStories[0]
     const headline = document.querySelector(".headline-text")
@@ -100,7 +108,7 @@ function startRound() {
 }
     
 
-
+// Select Stories To Be Used This Game
 function selectStories(collection) {
     for (let i = 0; i < 10; i++) {
         random = Math.floor(Math.random() * 3);
@@ -109,16 +117,15 @@ function selectStories(collection) {
     startRound();
 }
 
+// Get Stories From JSON File
 function startGame() {
     hideGameIntroModal()
-    
     fetch("../../headlines.json")
         .then(response => response.json())
         .then(data => selectStories(data));
-
-
 }
 
+// Show Intro Modal & Set Initial Variable Values
 function initialiseGame() {
     showGameIntroModal();
     score = 0;
