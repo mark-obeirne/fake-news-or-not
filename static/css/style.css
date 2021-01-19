@@ -99,7 +99,13 @@ ul {
     color: red;
 }
 
+.modal-btns {
+    display: flex;
+}
 
+.modal-btns * {
+    flex: 1;
+}
 
 /* Game Page Admin Panel */
 .player-name {
