@@ -39,6 +39,10 @@ ul {
     display: none;
 }
 
+.border-bottom-grey {
+    border-bottom: 1px solid lightgray;
+}
+
 /* Headings */
 .heading {
     font-family: 'Fraunces', serif;
@@ -68,8 +72,9 @@ ul {
     display: block;
 }
 
-/* Game Intro Modal */
-.game-intro-modal {
+
+/* Modals */
+.popup-modal {
     top: 0;
     bottom: 0;
     left: 0;
@@ -82,6 +87,19 @@ ul {
     border-radius: 10px;
     top: 10rem;
 }
+
+/* Game Intro Modal */
+
+/* Answer Feedback Modal */
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+
 
 /* Game Page Admin Panel */
 .player-name {
