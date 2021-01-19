@@ -47,8 +47,44 @@ function newRound() {
         hideFeedbackModal();
         startRound();
     } else {
+        hideFeedbackModal();
         console.log("Game ends")
+        showGameSummaryModal()
     }
+}
+
+
+// Update Game Summary Content Based On Player Score
+function updateSummaryModal() {
+    const summaryModalHeading = document.querySelector(".summary-modal h2");
+    const summaryModalContent = document.querySelector(".game-summary");
+
+    if (score >= 8) {
+        summaryModalHeading.textContent = "Snopes taps PLAYER to head up anti-fake-news division";
+        summaryModalContent.textContent = "After an impressive showing, PLAYER today received an invitation to head up Snopes' anti-fake-news division. 'It's unexpected', said PLAYER, 'I thought I was just playing a silly game'. Reports from the Kremlin indicate that there is some fear that the internet could become a more trustworthy source of information, but unsurprisingly noone was willing to comment."
+    } else if (score >= 5) {
+        summaryModalHeading.textContent = "PLAYER does alright";
+        summaryModalContent.textContent = "PLAYER suckered in by some stories that seemed to good to be true."
+    } else {
+        summaryModalHeading.textContent = "PLAYER banned from internet on April Fool's Day";
+        summaryModalContent.textContent = "PLAYER struggled to identify fact from fiction. The internet police have deemed that they should be kept offline on April Fool's Day for their own safety."
+    }
+
+}
+
+// Show Game Summary
+function showGameSummaryModal() {
+    const summaryModal = document.querySelector(".summary-modal");
+    summaryModal.classList.remove("hidden");
+    updateSummaryModal()
+    const playAgainBtn = document.querySelector(".play-again")
+    playAgainBtn.addEventListener("click", initialiseGame)
+}
+
+// Hide Game Summary
+function hideGameSummaryModal() {
+    const summaryModal = document.querySelector(".summary-modal");
+    summaryModal.classList.add("hidden");
 }
 
 // Display Modal After Player Answers & Update Content
@@ -71,13 +107,14 @@ function showFeedbackModal(answersMatch, headline) {
         nextButton.addEventListener("click", newRound)
     } else {
 
-        feedbackModalHeading.innerHTML = '<i class="far fa-check-circle"></i> Incorrect!';
+        feedbackModalHeading.innerHTML = '<i class="far fa-times-circle"></i> Incorrect!';
         feedbackModalHeading.classList.add("incorrect");
 
+        nextButton.addEventListener("click", newRound)
     }
 }
 
-// Hide Modal
+// Hide Answer Feedback Modal
 function hideFeedbackModal() {
     const feedbackModalHeading = document.querySelector(".feedback-modal h2");
     const feedbackModal = document.querySelector(".feedback-modal");
@@ -127,6 +164,7 @@ function startGame() {
 
 // Show Intro Modal & Set Initial Variable Values
 function initialiseGame() {
+    hideGameSummaryModal();
     showGameIntroModal();
     score = 0;
     round = 1;
