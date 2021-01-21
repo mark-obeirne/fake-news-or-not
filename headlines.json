@@ -1,12 +1,12 @@
 [
     {
-    "headline": "French Bulldog Elected Mayor In Kentucky Town",
-    "submitter": "",
-    "author": "Rachel Martin",
-    "pubDate": "5 November 2020",
-    "articleLink": "https://www.npr.org/2020/11/05/931643099/kentucky-town-elects-french-bulldog-named-wilbur-as-mayor?t=1610812290712",
-    "articleExcerpt": "A French bulldog named Wilbur was elected mayor of Rabbit Hash with a record 13,143 votes. The Kentucky town holds a canine election every three years.",
-    "category": "Fact"
+        "headline": "French Bulldog Elected Mayor In Kentucky Town",
+        "submitter": "",
+        "author": "Rachel Martin",
+        "pubDate": "5 November 2020",
+        "articleLink": "https://www.npr.org/2020/11/05/931643099/kentucky-town-elects-french-bulldog-named-wilbur-as-mayor?t=1610812290712",
+        "articleExcerpt": "A French bulldog named Wilbur was elected mayor of Rabbit Hash with a record 13,143 votes. The Kentucky town holds a canine election every three years.",
+        "category": "Fact"
     }, 
     {
         "headline": "Japan Celebrates Opening Of ‘7D’ Hologram Animal Park",
@@ -27,147 +27,363 @@
         "category": "Fake"
     },
     {
-        "headline": "",
+        "headline": "Samsung pays $1bn fine to Apple in $0.05 coins",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.theguardian.com/technology/blog/2012/aug/29/apple-samsung-trucks-nickels-fake",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fake"
     },
     {
-        "headline": "",
+        "headline": "Boaty McBoatface wins poll to name polar research vessel",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.theguardian.com/environment/2016/apr/17/boaty-mcboatface-wins-poll-to-name-polar-research-vessel",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Pitbull performs in Alaska, receives gift of bear spray",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://gawker.com/5930334/in-victory-for-the-internet-pitbull-visits-alaska-receives-gift-of-bear-spray",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Dutch train runs off tracks, caught by whale statue's tail",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.npr.org/2020/11/02/930409468/saved-by-the-whale-dutch-train-runs-off-elevated-tracks-is-caught-by-statues-tai",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Lottery Winner Arrested For Dumping $200,000 Of Manure On Ex-Boss’ Lawn",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.socialmediatoday.com/news/the-top-10-fake-news-articles-on-facebook-in-2018-infographic/545165/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fake"
     },
     {
-        "headline": "",
+        "headline": "Two alter boys arrested after putting weed in the censer-burner",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.socialmediatoday.com/news/the-top-10-fake-news-articles-on-facebook-in-2018-infographic/545165/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fake"
     },
     {
-        "headline": "",
+        "headline": "Poland accidentally invades Czech Republic in 'minor misunderstanding'",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.npr.org/2020/06/13/876604403/poland-accidentally-invades-czech-republic-in-minor-misunderstanding",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Barbados scores own goal to win cup tie",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.snopes.com/fact-check/football-follies/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Skydiver survives “freak accident” after parachute caught onnose of passing 737 airplane",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.snopes.com/fact-check/skydiver-dragged-by-737/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fake"
     },
     {
-        "headline": "",
+        "headline": "Pharmaceutical plant explosion spreads 240 tons of powdered laxative over English city",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://worldnewsdailyreport.com/pharmaceutical-plant-explosion-disseminates-240-tons-of-powdered-laxatives-over-an-english-city/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fake"
     },
     {
-        "headline": "",
+        "headline": "Canadians face major donut shortage after first day of cannabis legalisation",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://worldnewsdailyreport.com/canadians-face-major-donut-shortage-after-first-day-of-cannabis-legalization/?fbclid=IwAR1GjmJ_P0dpnw1rWGeuCeTNDr6-3qW_QoBBq6klCr26J9DTuJlY-EeRYH0",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fake"
     },
     {
-        "headline": "",
+        "headline": "Fortune cookie predicts winning lottery numbers",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.snopes.com/fact-check/fortune-cookie-fortune/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Police catch suspect after loud fart gives away hiding spot",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.snopes.com/fact-check/loud-fart-locates-crime-suspect/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Florida officer mistakes donut glaze for Methampetamines",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://www.snopes.com/fact-check/florida-officer-mistakes-donut-glaze-for-methampetamines/",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Pet parrot saves man from house fire in Australia",
         "submitter": "",
         "author": "",
         "pubDate": "",
-        "articleLink": "",
+        "articleLink": "https://news.sky.com/story/pet-parrot-saves-man-from-house-fire-in-australia-12123221",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fact"
     },
     {
-        "headline": "",
+        "headline": "Man eats $8,000 worth of food after being locked in supermarket overnight",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://worldnewsdailyreport.com/man-locked-inside-a-supermarket-for-a-night-eats-8000-worth-of-food/",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Plane accidentally empties toilet tank over cruise ship",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://worldnewsdailyreport.com/plane-accidentally-empties-toilet-tank-over-cruise-ship-23-injured/",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Hairdresser arrested for making voodoo dolls from customers' hair",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://worldnewsdailyreport.com/hairdresser-arrested-for-making-voodoo-dolls-from-customers-hair/",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "UK Driver's 'illegal' ham sandwiches seized at Dutch border",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://news.sky.com/story/brexit-drivers-illegal-ham-sandwiches-seized-at-dutch-border-under-eu-rules-12185744",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Policeman pays for family's Christmas dinner instead of charging them for shoplifting",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://news.sky.com/story/policeman-pays-for-familys-christmas-dinner-instead-of-charging-them-for-shoplifting-12178083",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Banana duct-taped to wall art installation sells for $120k in Miami",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://news.sky.com/story/banana-duct-taped-to-wall-art-installation-sells-for-120k-in-miami-11879272",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "12-year-old successfully sues parents over 'false promises' after not getting Xbox for Christmas",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://worldnewsdailyreport.com/12-year-old-successfully-sues-parents-over-false-and-misleading-promises-after-not-receiving-xbox-for-christmas/",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Plot to steal the Alamo foiled",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "http://hoaxes.org/af_database/permalink/stealing_the_alamo",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Danish Parliament Proposes Law To Paint Black Dogs White To Improve Road Safety",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "http://hoaxes.org/af_database/permalink/dogs_to_be_painted_white",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Ill-fitting Spacesuit issue cancels first all-female spacewalk",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://spacenews.com/spacesuit-issue-cancels-first-all-female-spacewalk/#:~:text=NASA%20announced%20March%2025%20that,March%2029%20with%20Christina%20Koch",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Indian man to sue parents for giving birth to him",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.bbc.com/news/world-asia-india-47154287",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "New York parents sue 30-year-old son who refuses to move out",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.npr.org/sections/thetwo-way/2018/05/23/613616315/judge-backs-n-y-parents-saying-their-30-year-old-son-must-move-out",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Woman reads terms & conditions, wins $10,000 prize",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.squaremouth.com/campaign/pays-to-read/",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Japanese Long-Distance Runner Runs 26-Day Marathon",
         "submitter": "",
         "author": "",
         "pubDate": "",
         "articleLink": "",
         "articleExcerpt": "",
-        "category": ""
+        "category": "Fake"
+    },
+    {
+        "headline": "BBC adds 'Skip The Sex' button to streaming service",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.mirror.co.uk/3am/celebrity-news/bbc-announce-new-sex-button-14217907",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Brazilian drug trafficker tries to escape prison disguised as his daughter",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.npr.org/2019/08/05/748263576/brazilian-drug-trafficker-tries-to-escape-prison-disguised-as-his-daughter",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Man jailed for breaking Covid lockdown by travelling from Scotland to Isle of Man on water scooter to visit girlfriend",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.bbc.com/news/world-europe-isle-of-man-55280466#:~:text=A%20man%20who%20crossed%20the,Whithorn%20to%20Ramsey%20on%20Friday",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Court spectator jailed for six months for yawning",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.npr.org/templates/story/story.php?storyId=111797476",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "McDonalds launches McPickle burger with patty replaced by pickles",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.instagram.com/p/Bvr3W-AjUWd/?utm_source=ig_embed",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Cambridgeshire police add drug sniffer bunny to the force",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://twitter.com/CambsCopsSC/status/1112621128982425600?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1112621128982425600%7Ctwgr%5E%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fwww.theguardian.com%2Ftheguardian%2F2019%2Fapr%2F01%2Fapril-fools-day-2019-the-best-jokes-and-pranks-in-one-place",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Dating app Tinder adds height verification feature",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://blog.gotinder.com/introducing-height-verification/",
+        "articleExcerpt": "",
+        "category": "Fake"
+    },
+    {
+        "headline": "Chinese zoo criticised for disguising hairy dog as lion",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "http://www.timeslive.co.za/world/2013/08/15/Chinese-zoo-under-fire-for-disguising-hairy-dog-as-lion",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Popstar Justin Bieber walks off stage after asking fans to stop screaming",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "http://www.bbc.co.uk/newsbeat/article/37748537/justin-bieber-walks-off-stage-in-manchester-after-asking-fans-to-stop-screaming",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Bitcoin investor pays 10,000 Bitcoin for two Papa John’s pizzas",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "https://www.investopedia.com/news/bitcoin-pizza-day-celebrating-20-million-pizza-order/#:~:text=On%20May%2022%2C%202010%2C%20now,man%20reached%20out%20for%20help",
+        "articleExcerpt": "",
+        "category": "Fact"
+    },
+    {
+        "headline": "Welshman offers local council £50m to let him search dump for hard drive containing Bitcoin",
+        "submitter": "",
+        "author": "",
+        "pubDate": "",
+        "articleLink": "",
+        "articleExcerpt": "",
+        "category": "Fact"
     }
 ]
