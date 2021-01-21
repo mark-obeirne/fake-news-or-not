@@ -45,6 +45,7 @@ function newRound() {
         selectedStories.shift();
         updateRound();
         hideFeedbackModal();
+        enableAnswerBtns();
         startRound();
     } else {
         hideFeedbackModal();
@@ -123,8 +124,18 @@ function hideFeedbackModal() {
     feedbackModal.classList.add("hidden");
 }
 
+// Disable Answer Buttons When User Makes A Choice
+function disableAnswerBtns() {
+    answerBtns.forEach(btn => btn.disabled = true)
+}
+
+function enableAnswerBtns() {
+    answerBtns.forEach(btn => btn.disabled = false)
+}
+
 // Check User Answer Against Headline Category
 function checkAnswer() {
+    disableAnswerBtns();
     const userAnswer = this.firstElementChild.innerText;
     const correctAnswer = startRound()
     
@@ -164,6 +175,7 @@ function startGame() {
 
 // Show Intro Modal & Set Initial Variable Values
 function initialiseGame() {
+    enableAnswerBtns();
     hideGameSummaryModal();
     showGameIntroModal();
     score = 0;
