@@ -125,10 +125,10 @@ function hideFeedbackModal() {
 
 // Check User Answer Against Headline Category
 function checkAnswer() {
-    const userAnswer = this.firstElementChild.textContent;
+    const userAnswer = this.firstElementChild.innerText;
     const correctAnswer = startRound()
     
-    if (userAnswer.trim().toLowerCase() === correctAnswer["category"].trim().toLowerCase()) {
+    if (userAnswer === correctAnswer["category"]) {
         updateScore();
         showFeedbackModal(true, correctAnswer)
     } else {
