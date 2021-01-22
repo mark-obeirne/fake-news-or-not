@@ -25,6 +25,14 @@ function hideGameIntroModal() {
     gameIntroModal.classList.add("hidden");
 }
 
+// Reset Displayed Score & Round Number
+function resetGameStats() {
+    const scoreDisplay = document.querySelector(".user-score");
+    const gameRound = document.querySelector(".game-round")
+    scoreDisplay.textContent = score.toString();
+    gameRound.textContent = round.toString();
+} 
+
 // Update Score & Displayed User Score
 function updateScore() {
     const scoreDisplay = document.querySelector(".user-score")
@@ -158,10 +166,14 @@ function startRound() {
 
 // Select Stories To Be Used This Game
 function selectStories(collection) {
+    storyArray = collection;
     for (let i = 0; i < 10; i++) {
-        random = Math.floor(Math.random() * 3);
-        selectedStories.push(collection[random]);
+        random = Math.floor(Math.random() * (storyArray.length - 1));
+        selectedStories.push(storyArray[random]);
+        storyArray.splice(random, 1)
     }
+    console.log(storyArray);
+    console.log(selectedStories);
     startRound();
 }
 
@@ -178,8 +190,10 @@ function initialiseGame() {
     enableAnswerBtns();
     hideGameSummaryModal();
     showGameIntroModal();
+    selectedStories = [];
     score = 0;
     round = 1;
+    resetGameStats();
 }
 
 
