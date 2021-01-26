@@ -37,6 +37,10 @@ ul {
     border-bottom: 1px solid lightgray;
 }
 
+.block {
+    display: block;
+}
+
 /* Headings */
 .heading {
     font-family: 'Fraunces', serif;
@@ -45,6 +49,10 @@ ul {
 
 .small-caps {
     font-variant: small-caps;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 /* Buttons */
