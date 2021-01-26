@@ -7,6 +7,7 @@ let selectedStories = []
 /* Element Selectors */
 const gameWindow = document.querySelector(".game-panel");
 const answerBtns = document.querySelectorAll(".answer-btn")
+const todaysDate = document.querySelector(".date");
 
 
 /* Functions */
@@ -196,9 +197,25 @@ function initialiseGame() {
     resetGameStats();
 }
 
+// Set Todays Date on Newspaper
+function setTodaysDate() {
+    const d = new Date();
+    const date = d.getDate();
+    let month = d.getMonth();
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+    month = months[month];
+    const year = d.getFullYear();
+    todaysDate.innerText = `${date} ${month}, ${year}`;
+    console.log(todaysDate.innerText);
+}
+
 
 /* Event Listeners */
 if (gameWindow) {
     window.addEventListener("load", initialiseGame);
     answerBtns.forEach(answer => answer.addEventListener("click", checkAnswer));
+}
+
+if (todaysDate) {
+    window.addEventListener("load", setTodaysDate);
 }
