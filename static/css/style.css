@@ -24,6 +24,10 @@ body {
     /* height: 100vh; */
 }
 
+.navbar-brand {
+    font-family: 'Fraunces', serif;
+}
+
 ul {
     list-style-type: none;
 }
@@ -176,7 +180,6 @@ ul {
         width: 50%;
     }
 
-    /* Currently not showing */
     .main-container:after {
         content: " ";
         position: absolute;
@@ -190,5 +193,8 @@ ul {
         border-radius: 0px 0px 10px 10px;
         box-shadow: 5px -5px 0 1px hsl(0, 0%, 88%)
     }
-}
 
+    .admin-panel h1 {
+        font-size: calc(1.625rem + 2.5vw)
+    }
+}
