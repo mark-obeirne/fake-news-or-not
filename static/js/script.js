@@ -102,10 +102,12 @@ function showFeedbackModal(answersMatch, headline) {
     const feedbackModal = document.querySelector(".feedback-modal");
     feedbackModal.classList.remove("hidden");
     const feedbackModalHeading = document.querySelector(".feedback-modal h2");
+    const feedbackStoryCategory = document.querySelector(".story-cat");
     const feedbackModalContent = document.querySelector(".article-summary p");
     const feedbackModalLink = document.querySelector(".article-link");
     const nextButton = document.querySelector(".next-headline");
     feedbackModalContent.textContent = headline["articleExcerpt"];
+    feedbackStoryCategory.textContent = `This story is ${headline["category"].toUpperCase()}`;
     feedbackModalLink.setAttribute("href", headline["articleLink"]);
 
     if (answersMatch) {
