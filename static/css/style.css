@@ -59,6 +59,10 @@ ul {
     text-transform: uppercase;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Buttons */
 .btn {
     font-size: 1.6rem;
