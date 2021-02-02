@@ -14,10 +14,24 @@ const todaysDate = document.querySelector(".date");
 // Show Intro Modal When Game Page Loads
 function showGameIntroModal() {
     const gameIntroModal = document.querySelector(".game-intro-modal");
-    gameIntroModal.classList.remove("hidden");
     const startGameBtn = document.querySelector(".start-game");
+    const usernameField = document.querySelector(".username-field");
+    gameIntroModal.classList.remove("hidden");
+    usernameField.addEventListener("keyup", enableStartGameBtn);
     startGameBtn.addEventListener("click", startGame);
     
+}
+
+// Validate username and enable start game button
+function enableStartGameBtn() {
+    console.log("changing")
+    const startGameBtn = document.querySelector(".start-game");
+    const usernameField = document.querySelector(".username-field");
+    if (usernameField.value) {
+        startGameBtn.classList.remove("disabled");
+    } else {
+        startGameBtn.classList.add("disabled");
+    }
 }
 
 // Hide Intro Modal
@@ -64,7 +78,7 @@ function newRound() {
 }
 
 
-// Update Game Summary Content Based On Player Score
+// Update Game Summary Content Based On ${playerName} Score
 function updateSummaryModal() {
     const summaryModalHeading = document.querySelector(".summary-modal h2");
     const summaryModalContent = document.querySelector(".game-summary");
@@ -72,14 +86,18 @@ function updateSummaryModal() {
     summaryScore.textContent = `Final Score: ${score}/10`;
 
     if (score >= 8) {
-        summaryModalHeading.textContent = "Snopes taps PLAYER to head up anti-fake-news division";
-        summaryModalContent.textContent = "PLAYER today received an invitation to head up Snopes' anti-fake-news division. 'It's unexpected', said PLAYER, 'I thought I was just playing a silly game'. Reports from the Kremlin indicate that there is some fear that the internet could become a more trustworthy source of information, but unsurprisingly noone was willing to comment."
-    } else if (score >= 5) {
-        summaryModalHeading.textContent = "PLAYER does alright";
-        summaryModalContent.textContent = "PLAYER suckered in by some stories that seemed to good to be true."
-    } else {
-        summaryModalHeading.textContent = "PLAYER banned from internet on April Fool's Day";
-        summaryModalContent.textContent = "PLAYER struggled to identify fact from fiction. The internet police have deemed that they should be kept offline on April Fool's Day for their own safety."
+        summaryModalHeading.textContent = `Snopes taps ${playerName} to head up anti-fake-news division`;
+        summaryModalContent.textContent = `${playerName} today received an invitation to head up Snopes' anti-fake-news division. 'It's unexpected', said ${playerName}, 'I thought I was just playing a silly game'. Reports from the Kremlin indicate that there is some fear that the internet could become a more trustworthy source of information, but unsurprisingly noone was willing to comment.`
+    } else if (score >= 6) {
+        summaryModalHeading.textContent = `${playerName} runs more hot than cold`;
+        summaryModalContent.textContent = `In the war against fake news, ${playerName} proved that they could be a valuable asset. There is some refinement needed as some stories got past them, but management was pleased to see that they identified the majority of news items that came their way correctly.`
+    } else if (score >=4) {
+        summaryModalHeading.textContent = `Memers rejoice at pulling the wool over ${playerName}'s eyes`;
+        summaryModalContent.textContent = `${playerName} was suckered in by some stories that sounded too good to be true. Memers have been busy churning out images to poke fun at their plight, but they'll move onto the next big thing soon enough.`
+    }
+    else {
+        summaryModalHeading.textContent = `${playerName} banned from internet on April Fool's Day`;
+        summaryModalContent.textContent = `${playerName} struggled to identify fact from fiction when news stories arrived on their desk. The elders of the internet have decided that ${playerName} should be kept offline on April Fool's Day for their own safety.`
     }
 
 }
@@ -99,7 +117,7 @@ function hideGameSummaryModal() {
     summaryModal.classList.add("hidden");
 }
 
-// Display Modal After Player Answers & Update Content
+// Display Modal After ${playerName} Answers & Update Content
 function showFeedbackModal(answersMatch, headline) {
     const feedbackModal = document.querySelector(".feedback-modal");
     feedbackModal.classList.remove("hidden");
@@ -184,7 +202,9 @@ function selectStories(collection) {
 
 // Get Stories From JSON File
 function startGame() {
-    hideGameIntroModal()
+    const usernameField = document.querySelector(".username-field");
+    playerName = usernameField.value;
+    hideGameIntroModal();
     fetch("../../headlines.json")
         .then(response => response.json())
         .then(data => selectStories(data));
