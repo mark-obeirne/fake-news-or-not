@@ -24,7 +24,6 @@ function showGameIntroModal() {
 
 // Validate username and enable start game button
 function enableStartGameBtn() {
-    console.log("changing")
     const startGameBtn = document.querySelector(".start-game");
     const usernameField = document.querySelector(".username-field");
     if (usernameField.value) {
@@ -72,8 +71,7 @@ function newRound() {
         startRound();
     } else {
         hideFeedbackModal();
-        console.log("Game ends")
-        showGameSummaryModal()
+        showGameSummaryModal();
     }
 }
 
@@ -195,8 +193,6 @@ function selectStories(collection) {
         selectedStories.push(storyArray[random]);
         storyArray.splice(random, 1)
     }
-    console.log(storyArray);
-    console.log(selectedStories);
     startRound();
 }
 
@@ -230,7 +226,6 @@ function setTodaysDate() {
     month = months[month];
     const year = d.getFullYear();
     todaysDate.innerText = `${date} ${month}, ${year}`;
-    console.log(todaysDate.innerText);
 }
 
 
