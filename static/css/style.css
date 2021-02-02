@@ -124,6 +124,10 @@ ul {
     display: block;
 }
 
+.admin-panel {
+    text-align: center;
+}
+
 /* Game Page Game Panel */
 .headline-container {
     background-image: url("../images/newspaper-1920.jpg");
@@ -202,5 +206,9 @@ ul {
 
     .admin-panel h1 {
         font-size: calc(1.625rem + 2.5vw)
+    }
+
+    .admin-panel {
+        text-align: left;
     }
 }
