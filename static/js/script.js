@@ -205,7 +205,7 @@ function startGame() {
     const usernameField = document.querySelector(".username-field");
     playerName = usernameField.value;
     hideGameIntroModal();
-    fetch("../../headlines.json")
+    fetch("headlines.json")
         .then(response => response.json())
         .then(data => selectStories(data));
 }
