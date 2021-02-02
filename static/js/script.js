@@ -68,10 +68,12 @@ function newRound() {
 function updateSummaryModal() {
     const summaryModalHeading = document.querySelector(".summary-modal h2");
     const summaryModalContent = document.querySelector(".game-summary");
+    const summaryScore = document.querySelector(".final-score");
+    summaryScore.textContent = `Final Score: ${score}/10`;
 
     if (score >= 8) {
         summaryModalHeading.textContent = "Snopes taps PLAYER to head up anti-fake-news division";
-        summaryModalContent.textContent = "After an impressive showing, PLAYER today received an invitation to head up Snopes' anti-fake-news division. 'It's unexpected', said PLAYER, 'I thought I was just playing a silly game'. Reports from the Kremlin indicate that there is some fear that the internet could become a more trustworthy source of information, but unsurprisingly noone was willing to comment."
+        summaryModalContent.textContent = "PLAYER today received an invitation to head up Snopes' anti-fake-news division. 'It's unexpected', said PLAYER, 'I thought I was just playing a silly game'. Reports from the Kremlin indicate that there is some fear that the internet could become a more trustworthy source of information, but unsurprisingly noone was willing to comment."
     } else if (score >= 5) {
         summaryModalHeading.textContent = "PLAYER does alright";
         summaryModalContent.textContent = "PLAYER suckered in by some stories that seemed to good to be true."
