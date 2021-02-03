@@ -32,6 +32,11 @@ ul {
     list-style-type: none;
 }
 
+.form-control,
+.form-select-lg {
+    font-size: 1.6rem;
+}
+
 /* General Display Settings */
 .hidden {
     display: none;
