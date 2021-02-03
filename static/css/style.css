@@ -106,6 +106,10 @@ ul {
 }
 
 /* Game Intro Modal */
+.username-field {
+    width: 50%;
+}
+
 
 /* Answer Feedback Modal */
 .correct {
