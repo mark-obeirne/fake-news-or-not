@@ -6,10 +6,15 @@
         <title>Fake News Or Not?! | Play Game</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=60070933d86e9e0019f17f5c&product=inline-share-buttons' async='async'></script>
         <script src="https://kit.fontawesome.com/30929a535c.js" crossorigin="anonymous"></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
         <link rel="stylesheet" href="static/css/style.css">
+        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=60070933d86e9e0019f17f5c&product=inline-share-buttons' async='async'></script>
+        <meta property="og:title" content="Fake News Or Not?! | Play Game" />
+        <meta property="og:url" content="https://mark-obeirne.github.io/fake-news-or-not/playgame.html" />
+        <!--<meta property="og:image" content="http://sharethis.com/images/logo.jpg" />-->
+        <meta property="og:description" content="Can you tell fact from fiction? Play 'Fake News Or Not' and put your skills to the test." />
+        <meta property="og:site_name" content="Fake News Or Not" />
     </head>
     <body>
         <div class="wrapper">
@@ -26,9 +31,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="#">Play Game</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Submit A Story</a>
                             </li>
                         </ul>
                     </div>
@@ -91,7 +93,7 @@
                                 <li>- Hope you enjoy!</li>
                             </ul>
                             <label for="username-field">Enter Username (for display purposes only)</label>
-                            <input type="text" class="form-control mb-4 username-field" id="username-field" placeholder="Username" aria-label="Username">
+                            <input type="text" class="form-control mb-4 username-field" id="username-field" placeholder="Username" aria-label="Username" maxlength="15">
                             <div class="play-game-btn text-center mt-4">
                                 <button class="btn btn-primary play-game start-game disabled">Start Game</button>
                             </div>
@@ -134,6 +136,7 @@
                                 <a href="/index.html" class="btn btn-primary article-link mx-2">Home Page <i class="fas fa-home mx-1"></i></a>
                                 <button class="btn btn-primary play-again mx-2">Play Again <i class="fas fa-redo mx-1"></i></button>
                             </div>
+                            <!--Share Buttons-->
                             <div class="sharethis-inline-share-buttons"></div>
                         </div>
                     </div>
