@@ -46,6 +46,10 @@ ul {
     border-bottom: 1px solid lightgray;
 }
 
+.border-top-grey {
+    border-top: 1px solid lightgray;
+}
+
 .block {
     display: block;
 }
@@ -126,6 +130,10 @@ ul {
 
 .modal-btns * {
     flex: 1;
+}
+
+.story-image {
+    max-height: 200px;
 }
 
 /* Game Page Admin Panel */
