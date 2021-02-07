@@ -123,10 +123,13 @@ function showFeedbackModal(answersMatch, headline) {
     const feedbackStoryCategory = document.querySelector(".story-cat");
     const feedbackModalContent = document.querySelector(".article-summary p");
     const feedbackModalLink = document.querySelector(".article-link");
+    const feedbackModalImage = document.querySelector(".story-image");
     const nextButton = document.querySelector(".next-headline");
     feedbackModalContent.textContent = headline["articleExcerpt"];
     feedbackStoryCategory.textContent = `This story is ${headline["category"].toUpperCase()}`;
     feedbackModalLink.setAttribute("href", headline["articleLink"]);
+    feedbackModalImage.setAttribute("src", headline["relatedImage"]);
+    feedbackModalImage.setAttribute("alt", headline["imageAlt"]);
 
     if (answersMatch) {
         // Update Text of Modal
